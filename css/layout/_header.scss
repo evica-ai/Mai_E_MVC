@@ -1,0 +1,29 @@
+#mainHeader {
+	background-color: #f1c40f;
+	padding: 10px;
+	margin-bottom: 20px;
+  }
+  #logo {
+	max-width: 100%;
+  }
+  #mainNav {
+	text-align: right;
+  }
+  #mainNav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  #mainNav li {
+	display: inline-block;
+	margin-left: 10px;
+  }
+  #mainNav a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav a:hover {
+	background-color: #e67e22;
+  }

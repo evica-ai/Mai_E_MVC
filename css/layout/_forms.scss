@@ -1,0 +1,31 @@
+#searchBar {
+	margin-top: 20px;
+  }
+  #searchform {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  }
+  #str {
+	padding: 8px;
+	margin-right: 5px;
+	border-radius: 3px;
+	border: none;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+	flex: 1 1 200px;
+  }
+  #submit {
+	background-color: #3498db;
+	color: #fff;
+	padding: 8px 20px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+	flex: 1 1 auto;
+  }
+  #submit:hover {
+	background-color: #2980b9;
+  }
+  
