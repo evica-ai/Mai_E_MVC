@@ -3,7 +3,7 @@
 error_reporting(E_ALL); ini_set('display_errors',1);
 
 require_once('./models/UserModel.php');
-require_once('./views/user_update.php');
+
 
 
 
@@ -78,15 +78,14 @@ public function loadViews() {
 	}else if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['user_lname']) && !empty($_POST['user_fname']) && !empty($_POST['user_username']) && !empty($_POST['user_password']) && !empty($_POST['user_role'])) {
 		$formvalues = array($_POST['user_lname'], $_POST['user_fname'], $_POST['user_username'], $_POST['user_password'], $_FILES['user_photo']['name'], $_POST['user_role']);
 		$this->model->newUser($formvalues);
-		header("Location: index.php?task=success");
-		exit();
+		header("Location: index.php?task=create");
 	}
 	else{ 
 		$Users = $this->model->getAll();
 		$rows = $this->model->rows;
 		require_once('views/user_list.php');
 	}
-	// require_once('views/user_update.php');
+	require_once('views/user_update.php');
 	require_once('views/footer.php');
 
 }
